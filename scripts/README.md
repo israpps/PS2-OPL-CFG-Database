@@ -36,7 +36,7 @@ Usage:
 
 ```
 
-It is STRONGLY advised thast your input forlder is different from your output folder.
+It is STRONGLY advised thast your input folder is different from your output folder.
 
 For each CFG file in the input folder, the scripts will:
 
