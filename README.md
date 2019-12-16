@@ -46,7 +46,7 @@ Of course this algorithm is very basic and naive, and will result in some errors
 
 * Open OPL Manager.
 * From the menu, choose _Open OPL Folder_.
-* Copy the files in the CFG folder.
+* Copy the files in the CFG folder of this repository to the CFG folder of OPL.
 
 ## Contributing
 
