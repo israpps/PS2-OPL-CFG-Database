@@ -19,12 +19,12 @@ Here are some stats:
 
 ```
 Total CFG files          =  13620
-CFGs with Descriptions   =  6229
-CFGs with Players info   =  5367
-CFGs with Genre info     =  6228
-CFGs with Release date   =  6398
-CFGs with Developer info =  6228
-CFGs with Ratings        =  5286
+CFGs with Descriptions   =  6290
+CFGs with Players info   =  5374
+CFGs with Genre info     =  6235
+CFGs with Release date   =  6405
+CFGs with Developer info =  6235
+CFGs with Ratings        =  5289
 ```
 
 You can find a list of games that could not be scraped in the *stats* folder.
