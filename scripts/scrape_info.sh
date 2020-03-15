@@ -9,6 +9,8 @@ OVERWRITE_EXISTING_FIELDS=true				# If true, update fields in the CFG file with 
 CREDENTIALS=								# Screenscraper.fr credentials in username:password format. Leave empty for anonymous.
 WORK_DIR_PATH=${PWD}						# Location of the work folder to be used by the script.
 WORK_DIR_NAME=work_dir						# Name of the work folder to be used by the script.
+LANGUAGE=en 								# Code of the referred language for descriptions, to pick from https://github.com/muldjord/skyscraper/blob/master/docs/LANGUAGES.md.
+DATE_FORMAT=%m-%d-%Y						# Desired format, following the bash date command options (example: +%m-%d-%Y for MM-DD-YYYY).
 
 # Script internal variables (do not touch)
 GAMELIST_FILE=gamelist.xml					# the name of the gamelist file created by SkyScraper to be parsed by the script.
@@ -64,7 +66,7 @@ function fetch_game_info () {
 
 	# Scrape the info, if not in the Skyscraper cache.
 	if [[ "$FORCE_CACHE_ONLY" = false ]]; then
-		Skyscraper -p ps2 -s screenscraper ${CREDARG} --nocovers --noscreenshots --nowheels --nomarquees --nobrackets --unattend -i ${WORK_DIR} "${FAKE_FILE_PATH}"
+		Skyscraper -p ps2 -s screenscraper ${CREDARG} --lang=${LANGUAGE} --nocovers --noscreenshots --nowheels --nomarquees --nobrackets --unattend -i ${WORK_DIR} "${FAKE_FILE_PATH}"
 	fi
 	
 	# Generate 1-entry gamelist to save the info
@@ -114,12 +116,7 @@ function generate_cfg_from_original () {
 		elif [[ $TAG_NAME = "genre" ]] ; then
 			set_field ${2} "Genre" "${CONTENT}" STATS_NUM_GENRE
 		elif [[ $TAG_NAME = "releasedate" ]] ; then
-			# Format original string in MM/DD/YY format
-			local YEAR=$(echo ${CONTENT} | cut -c1-4)
-			local MONTH=$(echo ${CONTENT} | cut -c5-6)
-			local DAY=$(echo ${CONTENT} | cut -c7-8)
-			
-			set_field ${2} "Release" "${MONTH}-${DAY}-${YEAR}"
+			set_field ${2} "Release" $(date -d "$(echo ${CONTENT} | sed -r 's/(.*)T(..)(..)(..)/\1 \2:\3:\4/')" +${DATE_FORMAT})
 		elif [[ $TAG_NAME = "developer" ]] ; then
 			set_field ${2} "Developer" "${CONTENT}"
 		elif [[ $TAG_NAME = "rating" ]] ; then
