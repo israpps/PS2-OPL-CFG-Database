@@ -9,8 +9,8 @@ OVERWRITE_EXISTING_FIELDS=true				# If true, update fields in the CFG file with 
 CREDENTIALS=								# Screenscraper.fr credentials in username:password format. Leave empty for anonymous.
 WORK_DIR_PATH=${PWD}						# Location of the work folder to be used by the script.
 WORK_DIR_NAME=work_dir						# Name of the work folder to be used by the script.
-LANGUAGE=en 								# Code of the referred language for descriptions, to pick from https://github.com/muldjord/skyscraper/blob/master/docs/LANGUAGES.md.
-DATE_FORMAT=%m-%d-%Y						# Desired format, following the bash date command options (example: +%m-%d-%Y for MM-DD-YYYY).
+LANGUAGE=en 								# Code of the preferred language for descriptions, to pick from https://github.com/muldjord/skyscraper/blob/master/docs/LANGUAGES.md.
+DATE_FORMAT=%m-%d-%Y						# Desired format, following the bash date command options (example: %m-%d-%Y for MM-DD-YYYY).
 
 # Script internal variables (do not touch)
 GAMELIST_FILE=gamelist.xml					# the name of the gamelist file created by SkyScraper to be parsed by the script.
