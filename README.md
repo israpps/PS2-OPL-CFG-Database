@@ -1,6 +1,6 @@
-# Open PS2 Loader Enriched CFG Repository 
+# The Open PS2 Loader CFG Database Project 
 
-## Goal Of The Project
+## Goal
 This is a collection of CFG files for use with [Open PS2 Loader](https://github.com/ifcaro/open-ps2-loader). 
 
 Originally based on [Veritas83's CFG repository](https://github.com/Veritas83/PS2-OPL-CFG), this database 
