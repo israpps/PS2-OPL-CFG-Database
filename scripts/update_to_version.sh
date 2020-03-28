@@ -6,7 +6,7 @@ print_usage () {
 }
 
 # Main
-if [[ "$#" -ne 2]]; then
+if [[ "$#" -ne 2 ]]; then
 	print_usage
 	exit 0
 else
