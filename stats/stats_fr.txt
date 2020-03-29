@@ -1,0 +1,7 @@
+Total CFG files          =  13620
+CFGs with Descriptions   =  7621
+CFGs with Players info   =  6136
+CFGs with Genre info     =  7015
+CFGs with Release date   =  7193
+CFGs with Developer info =  7015
+CFGs with Ratings        =  5920
