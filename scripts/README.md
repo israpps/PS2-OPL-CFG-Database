@@ -1,6 +1,6 @@
 # PS2 Game Info Scraping Scripts
 
-This is a collection of hacky scripts used to midify a collection of CFG files by adding game information for:
+This is a collection of hacky scripts used to modify a collection of CFG files by adding game information for:
 
 * Game Description
 * Number Of Players
@@ -13,11 +13,11 @@ The scripts take your CFG folder as an argument, and will attempt to add game in
 
 ## Pre-requisites to run the scripts
 
-1. These are bash scripts. You need a UNIX-like environment to run them. They have been tested on a Debian derivative. If you have Windows, they should work with [WSL]( * Game Description * Number Of Players * Genre * Release Date * Developer * Rating).
+1. These are bash scripts. You need a UNIX-like environment to run them. They have been tested on a Debian derivative. If you have Windows, they should work with [WSL](https://docs.microsoft.com/en-us/windows/wsl/).
 
 2. Before running the scripts, you need to install [SkyScraper](https://github.com/muldjord/skyscraper).
 
-3. It is strongly reccommended you create an account on [Screenscraper.fr](https://www.screenscraper.fr). There are different sunscription tiers that allow you to use different numbers of threads for scraping. If you feel the service is useful for you, support them through Patreon!
+3. It is strongly recommended you create an account on [Screenscraper.fr](https://www.screenscraper.fr). There are different subscription tiers that allow you to use different numbers of threads for scraping. If you feel the service is useful for you, support them through Patreon!
 
 ## Disclaimer
 
