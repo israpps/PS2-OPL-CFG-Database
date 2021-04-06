@@ -48,6 +48,9 @@ Of course this algorithm is very basic and naive, and will result in some errors
 * From the menu, choose _Open OPL Folder_.
 * Copy the files in the CFG folder of this repository to the CFG folder of OPL.
 
+**Note**: wLaunchElf has issues copying a large number of files (see this [issue](https://github.com/Tom-Bruise/PS2-OPL-CFG-Database/issues/5)).
+To work around this, you might try using the *export_cfg_from_csv.sh* script in the *Scripts* folder.
+
 ## Contributing
 
 Just create a pull request.
