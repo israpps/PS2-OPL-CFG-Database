@@ -1,5 +1,7 @@
 # The Open PS2 Loader CFG Database Project 
 
+> ### This fork was made to be used by [_HDL Batch Installer_](https://github.com/israpps/HDL-Batch-installer) download manager
+
 ## Goal
 This is a collection of CFG files for use with [Open PS2 Loader](https://github.com/ifcaro/open-ps2-loader). 
 
