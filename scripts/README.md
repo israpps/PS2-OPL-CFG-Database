@@ -42,11 +42,11 @@ For each CFG file in the input folder, the scripts will:
 
 1. Make a copy of the CFG file in the output folder.
 2. Extract the game name from the CFG file.
-3. Create a fake GAME_NAME.iso file (0 bytes) to give to Skyscraper.
+3. Create a fake `GAME_NAME.iso` file (0 bytes) to give to Skyscraper.
 4. Skyscraper will contact Screenscaper.fr and try to generate a gamelist file containing only that game.
-5. The script will parse the 1-game gamelist.xml file to extract informatino about the game, and save it to the copied CFG file in a format that OPL understands.
+5. The script will parse the 1-game `gamelist.xml` file to extract information about the game, and save it to the copied CFG file in a format that OPL understands.
 
-As you can see it's all very hacky and buggy, but it worked for my needs.
+As you can see it's all very hacky, but it worked for my needs.
 
 ### Using your Screenscraper.fr account
 
@@ -55,7 +55,7 @@ If you don't create an account, you might be severely limited in how many reques
 
 ### Using The Local Cache
 
-*After* you complete a scraping pass, Skyscraper will save data in its local cache. If you don't have any new games to scrape, you an disable querying the online service and tap directly form the local cache by setting the FORCE_CACHE_ONLY option to true inside the script under the _Configurable Options_ section.
+*After* you complete a scraping pass, Skyscraper will save data in its local cache. If you don't have any new games to scrape, you can disable querying the online service and tap directly form the local cache by setting the `FORCE_CACHE_ONLY` option to `true` inside the script under the _Configurable Options_ section.
 
 ### Other Options For The Script
 
@@ -63,7 +63,7 @@ You can configure additinoal options by opening the script and editing values un
 
 ## Generating Stats
 
-Use the create_stats.sh script, by passing your CFG folder as an argument. This will generate statistics regarding how many CFG files have a certain kind of information.
+Use the `create_stats.sh` script, by passing your CFG folder as an argument. This will generate statistics regarding how many CFG files have a certain kind of information.
 
 ## License
 
